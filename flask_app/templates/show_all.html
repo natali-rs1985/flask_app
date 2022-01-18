@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All users</title>
+</head>
+<body>
+
+<h1>Вже привіталися з</h1>
+{% for names in names %}
+    <h2>{{ names }}</h2>
+{% endfor %}
+
+<br>
+<a href="{{ url_for('home') }}">Повернутися</a>
+
+</body>
+</html>
