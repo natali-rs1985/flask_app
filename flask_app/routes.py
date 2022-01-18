@@ -1,3 +1,4 @@
+import os
 from . import app
 from flask import render_template, request
 
@@ -24,3 +25,7 @@ def home():
 @app.route('/show_all')
 def show_all():
     return render_template('show_all.html', names=names)
+
+
+port = int(os.environ.get("PORT", 5000))
+app.run(host='0.0.0.0', port=port)
