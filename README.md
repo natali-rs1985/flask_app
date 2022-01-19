@@ -1,1 +1,1 @@
-# flask_app
+# App starts from main.py file
