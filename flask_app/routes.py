@@ -27,5 +27,5 @@ def show_all():
     return render_template('show_all.html', names=names)
 
 
-port = int(os.environ.get("PORT", 5000))
-app.run(host='0.0.0.0', port=port)
+# port = int(os.environ.get("PORT", 5000))
+# app.run(host='0.0.0.0', port=port)
