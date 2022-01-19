@@ -10,10 +10,8 @@ def home():
     # global names
     if request.method == 'POST':
         name = request.form['name']
-        print('Hello')
         if name in names:
             message = f"Вже бачилися, {name}"
-            print('Hello name')
             return render_template('home.html', message=message)
         else:
             names.append(name)
