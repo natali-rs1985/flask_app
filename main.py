@@ -2,4 +2,6 @@ from flask_app import app
 import os
 
 
-app.run(debug=False, port=os.environ['PORT'])
+port = int(os.getenv('PORT'))
+app.run(host='0.0.0.0', port=port)
+
